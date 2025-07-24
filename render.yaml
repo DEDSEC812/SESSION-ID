@@ -3,8 +3,10 @@ services:
     name: whatsapp-pairing
     env: node
     plan: free
+    branch: main
+    repo: https://github.com/DEDSEC812/SESSION-ID
     buildCommand: npm install
-    startCommand: npm start
+    startCommand: node index.js
     envVars:
       - key: PORT
         value: 10000
